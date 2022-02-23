@@ -10,7 +10,10 @@ void read_file(vector <string>& commands, string& path)
 		while (getline(file, str))
 			commands.push_back(str);
 	}
-	else
+	else {
 		cout << "Error: Operation file corrupted" << endl;
+		return;
+	}
 	file.close();
+	parse(commands);
 }
