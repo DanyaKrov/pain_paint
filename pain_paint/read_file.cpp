@@ -15,5 +15,4 @@ void read_file(vector <string>& commands, string& path)
 		return;
 	}
 	file.close();
-	parse(commands);
 }
