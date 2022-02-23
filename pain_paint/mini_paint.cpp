@@ -18,16 +18,16 @@ int main(int argc, string* argv[])
 		parse(commands, matrix);
 		for (int i = 1; i < commands.size(); i++) {
 			list1 = split(commands[i]);
-			if ((list1[0] == "r")
-				emptyRect(matrix, list1[1], list1[2], list1[3], list1[4]);
+			if (list1[0] == "r")
+				emptyRect(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), str_to_int(list1[4]), list1[5]);
 			if ((split(commands[i]))[0] == "R")
-				filledRect(matrix, list1[1], list1[2], list1[3], list1[4]);
+				filledRect(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), str_to_int(list1[4]), list1[5]);
 			if ((split(commands[i]))[0] == "c")
-				emptyRect(matrix, list1[1], list1[2], list1[3]);
+				emptyCirc(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), list1[4]);
 			if ((split(commands[i]))[0] == "C")
-				filledRect(matrix, list1[1], list1[2], list1[3];
+				filledCirc(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), list1[4]);
 			if ((split(commands[i]))[0] == "L")
-				line(matrix, list1[1], list1[2], list1[3], list1[4]);
+				line(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), str_to_int(list1[4]), list1[5]);
 		}
 	}
 	return 0;
