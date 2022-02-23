@@ -43,5 +43,6 @@ vector<string> split(string str)
             issp = false;
         }
     }
+    s.push_back(word);
     return s;
 }
