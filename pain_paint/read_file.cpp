@@ -7,7 +7,7 @@ void read_file(vector <string>& commands, string& path)
 
 	file.open(path);
 	if (file.is_open()) {
-		if (getline(file, str))
+		while (getline(file, str))
 			commands.push_back(str);
 	}
 	else

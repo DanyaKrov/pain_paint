@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="mini_paint.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="check_func.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="read_file.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

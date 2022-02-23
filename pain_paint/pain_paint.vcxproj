@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f345a042-3428-4990-8d96-c3c14876c21e}</ProjectGuid>
+    <ProjectGuid>{46d58f05-2fde-450c-afaa-17c06099bab8}</ProjectGuid>
     <RootNamespace>painpaint</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -140,7 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="check_func.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="mini_paint.cpp" />
+    <ClCompile Include="read_file.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pain_paint.h" />

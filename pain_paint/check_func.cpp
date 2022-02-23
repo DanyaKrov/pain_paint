@@ -33,6 +33,14 @@ int itc_find_str(string str1, string str2) {
         return -1;
     }
 }
-bool incorrect_name(string way) {
-    return (itc_find_str("/operation.it", way) == -1);
+
+void print_vector(const vector <string>& vector1)
+{
+    if (vector1.size() > 0) {
+        cout << "[";
+        for (int i = 0; i < vector1.size() - 1; i++) {
+            cout << vector1[i] << ", ";
+        }
+        cout << vector1[vector1.size() - 1] << "]" << endl;
+    }
 }
