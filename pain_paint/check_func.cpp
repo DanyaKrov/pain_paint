@@ -24,4 +24,5 @@ bool check_file(string path)
 		cout << "Error: file has not correct extension" << endl;
 		return false;
 	}
+	return true;
 }

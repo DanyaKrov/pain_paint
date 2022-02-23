@@ -1,7 +1,6 @@
 #include "pain_paint.h"
 
-void parse(vector <string>& commands) {
-	vector<vector<string>> matrix;
+void parse(vector <string>& commands, vector<vector<string>>& matrix) {
 	if (commands.size() > 0) {
 		vector<string> startInfo = split(commands[0]);
 		if (startInfo.size() == 3) {
@@ -29,10 +28,5 @@ void parse(vector <string>& commands) {
 	else {
 		cout << "Error: no commands" << endl;
 		return;
-	}
-	for (int _; _ < matrix.size(); _++)
-		print_vector(matrix[_]);
-	for (int i = 1; i < commands.size() - 1; i++) {
-
 	}
 }

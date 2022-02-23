@@ -140,8 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="additional.cpp" />
+    <ClCompile Include="additional_2.cpp" />
     <ClCompile Include="check_func.cpp" />
     <ClCompile Include="mini_paint.cpp" />
+    <ClCompile Include="parse.cpp" />
     <ClCompile Include="read_file.cpp" />
   </ItemGroup>
   <ItemGroup>

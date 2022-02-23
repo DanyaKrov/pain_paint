@@ -20,4 +20,4 @@ bool check_file(string path);
 void read_file(vector <string>& commands, string& path);
 
 //parse
-void parse(vector <string>& commands);
+void parse(vector <string>& commands, vector<vector<string>>& matrix);
