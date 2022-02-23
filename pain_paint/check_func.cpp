@@ -20,7 +20,7 @@ bool check_file(string path)
 		cout << "Error: name file" << endl;
 		return false;
 	}
-	if (!(itc_find_str(path, ".txt"))) {
+	if (!(itc_find_str(path, ".it"))) {
 		cout << "Error: file has not correct extension" << endl;
 		return false;
 	}
