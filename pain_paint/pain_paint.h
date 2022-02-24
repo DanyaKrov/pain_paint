@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <Windows.h>
 using namespace std;
 
 //additional
@@ -32,3 +33,6 @@ void emptyCirc(vector<vector<string>>& matrix, int x, int y, int rad, string cha
 void filledCirc(vector<vector<string>>& matrix, int x, int y, int rad, string char_);
 
 void line(vector<vector<string>>& matrix, int x, int y, int x1, int y1, string char_);
+
+//error
+void print_error(string error);

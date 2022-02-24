@@ -12,7 +12,7 @@ int main(int argc, string* argv[])
 	if (check_path(str, path) && check_file(path)) {
 		read_file(commands, path);
 		if (commands.size() == 0) {
-			cout << "Error: no commands" << endl;
+			print_error("Error: no commands");
 			return 0;
 		}
 		parse(commands, matrix);

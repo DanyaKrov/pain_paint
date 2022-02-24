@@ -15,12 +15,12 @@ void parse(vector <string>& commands, vector<vector<string>>& matrix) {
 		}
 		catch (const std::exception&)
 		{
-			cout << "Error: wrong types" << endl;
+			print_error("Error: wrong types");
 			return;
 		}
 	}
 	else {
-		cout << "Error: wrong number of parameters" << endl;
+		print_error("Error: wrong number of parameters");
 		return;
 	}
 }

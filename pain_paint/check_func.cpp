@@ -7,7 +7,7 @@ bool check_path(string str, string& path)
 			path += str[i];
 		else {
 			path = "";
-			cout << "Error: a lot of arguments";
+			print_error("Error: a lot of arguments");
 			return false;
 		}
 	}
@@ -17,11 +17,11 @@ bool check_path(string str, string& path)
 bool check_file(string path)
 {
 	if (!(itc_find_str(path, "operation"))) {
-		cout << "Error: name file" << endl;
+		print_error("Error: name file");
 		return false;
 	}
 	if (!(itc_find_str(path, ".it"))) {
-		cout << "Error: file has not correct extension" << endl;
+		print_error("Error: file has not correct extension");
 		return false;
 	}
 	return true;
