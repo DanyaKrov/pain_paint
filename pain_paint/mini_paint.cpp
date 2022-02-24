@@ -20,13 +20,13 @@ int main(int argc, string* argv[])
 			list1 = split(commands[i]);
 			if (list1[0] == "r")
 				emptyRect(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), str_to_int(list1[4]), list1[5]);
-			if ((split(commands[i]))[0] == "R")
+			if (list1[0] == "R")
 				filledRect(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), str_to_int(list1[4]), list1[5]);
-			if ((split(commands[i]))[0] == "c")
+			if (list1[0] == "c")
 				emptyCirc(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), list1[4]);
-			if ((split(commands[i]))[0] == "C")
+			if (list1[0] == "C")
 				filledCirc(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), list1[4]);
-			if ((split(commands[i]))[0] == "L")
+			if (list1[0] == "L")
 				line(matrix, str_to_int(list1[1]), str_to_int(list1[2]), str_to_int(list1[3]), str_to_int(list1[4]), list1[5]);
 		}
 	}
