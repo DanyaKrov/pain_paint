@@ -9,6 +9,7 @@ using namespace std;
 int len(string str);
 bool itc_find_str(string str1, string str2);
 void print_vector(const vector <string>& vector1);
+void print_matrix(vector<vector<string>>& matrix);
 int str_to_int(string str);
 vector<string> split(string str);
 

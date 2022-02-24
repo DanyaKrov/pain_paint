@@ -46,3 +46,7 @@ vector<string> split(string str)
     s.push_back(word);
     return s;
 }
+void print_matrix(vector<vector<string>>& matrix) {
+    for (int _ = 0; _ < matrix.size(); _++)
+        print_vector(matrix[_]);
+}
