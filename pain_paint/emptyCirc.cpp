@@ -6,14 +6,14 @@ void emptyCirc(vector<vector<string>>& matrix, int x, int y, int rad, string cha
     int radiusError = 1 - rad;
     while (x1 >= y1)
     {
-        matrix[x1 + x][y1 + y] = char_;
-        matrix[y1 + x][x1 + y] = char_;
-        matrix[-x1 + x][y1 + y] = char_;
-        matrix[-y1 + x][x1 + y] = char_;
-        matrix[-x1 + x][-y1 + y] = char_;
-        matrix[-y1 + x][-x1 + y] = char_;
-        matrix[x1 + x][-y1 + y] = char_;
-        matrix[y1 + x][-x1 + y] = char_;
+        input_check(matrix, x1 + x, y1 + y, char_);
+        input_check(matrix, y1 + x, x1 + y, char_);
+        input_check(matrix, -x1 + x, y1 + y, char_);
+        input_check(matrix, -y1 + x, x1 + y, char_);
+        input_check(matrix, -x1 + x, -y1 + y, char_);
+        input_check(matrix, -y1 + x, -x1 + y, char_);
+        input_check(matrix, x1 + x, -y1 + y, char_);
+        input_check(matrix, y1 + x, -x1 + y, char_);
         y1++;
         if (radiusError < 0)
         {

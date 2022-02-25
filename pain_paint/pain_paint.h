@@ -8,7 +8,7 @@ using namespace std;
 
 //additional
 int len(string str);
-bool itc_find_str(string str1, string str2);
+int itc_find_str(string str1, string str2);
 void print_vector(const vector <string>& vector1);
 void print_matrix(vector<vector<string>>& matrix);
 int str_to_int(string str);
@@ -17,6 +17,7 @@ vector<string> split(string str);
 //check
 bool check_path(string str, string& path);
 bool check_file(string path);
+void input_check(vector<vector<string>>& matrix, int x, int y, string char_);
 
 //read
 void read_file(vector <string>& commands, string& path);

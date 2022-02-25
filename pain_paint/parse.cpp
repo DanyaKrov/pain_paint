@@ -5,6 +5,14 @@ void parse(vector <string>& commands, vector<vector<string>>& matrix) {
 	if (startInfo.size() == 3) {
 		try
 		{
+			if (str_to_int(startInfo[0]) < 0 || str_to_int(startInfo[0]) > 300) {
+				print_error("Error: width out of range");
+				return;
+			}
+			if (str_to_int(startInfo[1]) < 0 || str_to_int(startInfo[1]) > 300) {
+				print_error("Error: height out of range");
+				return;
+			}
 			vector<string> list;
 			for (int i = 0; i < str_to_int(startInfo[1]); i++) {
 				list = {};

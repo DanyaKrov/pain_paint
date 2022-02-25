@@ -16,6 +16,12 @@ int main(int argc, string* argv[])
 			return 0;
 		}
 		parse(commands, matrix);
+		if (matrix.size() == 0) {
+			return -1;
+		}
+		if (matrix[0].size() == 0) {
+			return -1;
+		}
 		for (int i = 1; i < commands.size(); i++) {
 			list1 = split(commands[i]);
 			if (list1[0] == "r")

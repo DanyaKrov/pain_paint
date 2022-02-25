@@ -1,6 +1,6 @@
 #include "pain_paint.h"
 
-bool itc_find_str(string str1, string str2) {
+int itc_find_str(string str1, string str2) {
     if (len(str2) > len(str1))
         return -1;
     else
@@ -20,20 +20,19 @@ bool itc_find_str(string str1, string str2) {
                     }
                 }
                 if (answer == len(str2))
-                    return true;
+                    return i;
             }
         }
-        return false;
+        return -1;
     }
 }
 
 void print_vector(const vector <string>& vector1)
 {
     if (vector1.size() > 0) {
-        cout << "[";
         for (int i = 0; i < vector1.size() - 1; i++) {
-            cout << vector1[i] << ", ";
+            cout << vector1[i];
         }
-        cout << vector1[vector1.size() - 1] << "]" << endl;
+        cout << vector1[vector1.size() - 1] << endl;
     }
 }
