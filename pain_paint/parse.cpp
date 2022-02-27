@@ -13,6 +13,10 @@ void parse(vector <string>& commands, vector<vector<string>>& matrix) {
 				print_error("Error: height out of range");
 				return;
 			}
+			if (len(startInfo[2]) != 1) {
+				print_error("Error: wrong symbol");
+				return;
+			}
 			vector<string> list;
 			for (int i = 0; i < str_to_int(startInfo[1]); i++) {
 				list = {};
