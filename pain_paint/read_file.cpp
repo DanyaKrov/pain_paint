@@ -11,7 +11,7 @@ void read_file(vector <string>& commands, string& path)
 			commands.push_back(str);
 	}
 	else {
-		print_error("Error: Operation file corrupted");
+		cout << "Error: Operation file corrupted" << endl;
 		return;
 	}
 	file.close();

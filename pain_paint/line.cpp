@@ -17,6 +17,7 @@ void line(vector<vector<string>>& matrix, int x1, int y1, int x2, int y2, string
 			y++;
 			d += d2;
 		}
-		matrix[y][x] = char_;
+		if (matrix.size() > y && matrix[0].size() > x)
+			matrix[y][x] = char_;
 	}
 }

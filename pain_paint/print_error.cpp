@@ -7,6 +7,6 @@ void SetColor(int a, int bg) {
 
 void print_error(string error) {
     SetColor(12, 0);
-    cout << error <<endl;
+    cout << error << endl;
     SetColor(7, 0);
 }
