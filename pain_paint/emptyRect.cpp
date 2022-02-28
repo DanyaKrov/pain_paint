@@ -1,6 +1,10 @@
 #include "pain_paint.h"
 
 void emptyRect(vector<vector<string>>& matrix, int x, int y, int width, int height, string char_) {
+    if (width <= 0 || height <= 0) {
+        print_error("Error: wrong parameters");
+        exit(-1);
+    }
     for (int j = 0; j < matrix.size(); j++) {
         for (int i = 0; i < matrix[j].size(); i++) {
             if (y == j || j == y + height - 1) {

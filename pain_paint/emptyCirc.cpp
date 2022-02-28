@@ -1,6 +1,10 @@
 #include "pain_paint.h"
 
 void emptyCirc(vector<vector<string>>& matrix, int x, int y, int rad, string char_) {
+    if (rad <= 0) {
+        print_error("Error: wrong parameters");
+        exit(-1);
+    }
     int x1 = rad;
     int y1 = 0;
     int radiusError = 1 - rad;

@@ -2,6 +2,14 @@
 
 void line(vector<vector<string>>& matrix, int x1, int y1, int x2, int y2, string char_)
 {
+	if (x1 == x2 && y1 != y2) {
+		while (y1 <= y2) {
+			y1++;
+			if (matrix.size() > y1)
+				matrix[y1][x1] = char_;
+		}
+		return;
+	}
 	int x, y, dx = x2 - x1, dy = y2 - y1;
 	int d = (dy << 1) - dx, d1 = dy << 1, d2 = (dy - dx) << 1;
 	x = x1, y = y1;
