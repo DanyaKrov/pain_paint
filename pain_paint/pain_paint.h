@@ -13,6 +13,7 @@ void print_vector(const vector <string>& vector1);
 void print_matrix(vector<vector<string>>& matrix);
 int str_to_int(string str);
 vector<string> split(string str);
+void swapInt(int& a, int& b);
 
 //check
 bool check_path(string str, string& path);

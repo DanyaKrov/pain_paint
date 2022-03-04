@@ -51,3 +51,8 @@ void print_matrix(vector<vector<string>>& matrix) {
     for (int _ = 0; _ < matrix.size(); _++)
         print_vector(matrix[_]);
 }
+void swapInt(int &a, int &b) {
+    int y = a;
+    a = b;
+    b = y;
+}
