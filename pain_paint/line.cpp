@@ -3,7 +3,7 @@
 
 void line(vector<vector<string>>& matrix, int x1, int y1, int x2, int y2, string char_)
 {
-    if ((x1 < 0 || y1 < 0) || (x1 > matrix[0].size() || y1 > matrix.size())) {
+    if ((x1 < 0 || y1 < 0) || (x1 >= matrix[0].size() || y1 >= matrix.size()) || (x2 < 0 || y2 < 0)) {
         print_error("Error: wrong parameters");
         exit(-1);
     }
