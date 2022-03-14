@@ -20,6 +20,7 @@ int abs(int n);
 bool check_path(string str, string& path);
 bool check_file(string path);
 void input_check(vector<vector<string>>& matrix, int x, int y, string char_);
+bool check_parameters(int n1, int n2, int n3, int n4);
 
 //read
 void read_file(vector <string>& commands, string& path);
