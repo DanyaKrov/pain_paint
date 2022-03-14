@@ -29,10 +29,6 @@ int main(int argc, string* argv[])
 			if (split(commands[i]).size() == 0)
 				continue;
 			list1 = split(commands[i]);
-			if (str_to_int(list1[1]) < 0 || str_to_int(list1[2]) < 0 || str_to_int(list1[3]) < 0 || str_to_int(list1[4]) < 0){
-				print_error("Error: negative parameter");
-				return -1;
-			}
 			if (list1[0] == "r") {
 				if (list1.size() != 6) {
 					print_error("Error: wrond number of parameters");

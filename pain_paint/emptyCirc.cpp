@@ -1,7 +1,7 @@
 #include "pain_paint.h"
 
 void emptyCirc(vector<vector<string>>& matrix, int x, int y, int rad, string char_) {
-    if (rad <= 0) {
+    if (rad <= 0 || rad > 300) {
         print_error("Error: wrong parameters");
         exit(-1);
     }
