@@ -1,4 +1,5 @@
 #include "pain_paint.h"
+
 int len(string str)
 {
     int res = 0;
@@ -11,10 +12,18 @@ int str_to_int(string str) //convert string to integer
 {
     int res = 0;
     int mult = 1;
-    string rev_str = "";
-    for (int i = len(str) - 1; i >= 0; i--) {
-        res += (str[i] - 48) * mult;
-        mult *= 10;
+    if (str[0] == '-') {
+        for (int i = len(str) - 1; i >= 1; i--) {
+            res += (str[i] - 48) * mult;
+            mult *= 10;
+        }
+        res *= -1;
+    }
+    else {
+        for (int i = len(str) - 1; i >= 0; i--) {
+            res += (str[i] - 48) * mult;
+            mult *= 10;
+        }
     }
     return res;
 }
@@ -51,7 +60,7 @@ void print_matrix(vector<vector<string>>& matrix) {
     for (int _ = 0; _ < matrix.size(); _++)
         print_vector(matrix[_]);
 }
-void swapInt(int &a, int &b) {
+void swapInt(int& a, int& b) {
     int y = a;
     a = b;
     b = y;
