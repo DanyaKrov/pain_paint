@@ -36,3 +36,9 @@ void print_vector(const vector <string>& vector1)
         cout << vector1[vector1.size() - 1] << endl;
     }
 }
+
+int abs(int n) {
+    if (n < 0)
+        return -n;
+    return n;
+}

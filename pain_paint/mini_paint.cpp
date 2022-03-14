@@ -1,4 +1,5 @@
-﻿#include "pain_paint.h"
+﻿
+#include "pain_paint.h"
 
 int main(int argc, string* argv[])
 {

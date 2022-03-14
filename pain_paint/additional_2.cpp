@@ -12,6 +12,27 @@ int str_to_int(string str) //convert string to integer
 {
     int res = 0;
     int mult = 1;
+    double mult_ = 0.1;
+    bool dot_passed = false;
+    if (itc_find_str(str, ".") != -1) {
+        double res_ = 0;
+        for (int i = 0; str[i] != '\0'; i++) {
+            if (str[i] == '.') {
+                dot_passed = true;
+                continue;
+            }
+            if (!(dot_passed)) {
+                res_ += (str[i] - 48) * mult;
+                mult *= 10;
+            }
+            else {
+                res_ += (str[i] - 48) * mult_;
+                mult_ *= 0.1;
+            }
+        }
+        res_ = round(res_);
+        return res_;
+    }
     if (str[0] == '-') {
         for (int i = len(str) - 1; i >= 1; i--) {
             res += (str[i] - 48) * mult;

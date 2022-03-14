@@ -12,7 +12,7 @@ void line(vector<vector<string>>& matrix, int x1, int y1, int x2, int y2, string
     if (length > 0) {
         length++;
         while (length--) {
-            if (roundf(x) >= 0 && roundf(y) >= 0 && roundf(x) < matrix.size() && roundf(y) < matrix[roundf(x)].size()) 
+            if (roundf(x) >= 0 && roundf(y) >= 0 && roundf(x) < matrix.size() && roundf(y) < matrix[roundf(x)].size())
                 matrix[roundf(y)][roundf(x)] = char_;
             x += dx;
             y += dy;
@@ -21,7 +21,7 @@ void line(vector<vector<string>>& matrix, int x1, int y1, int x2, int y2, string
     else {
         length--;
         while (length++) {
-            if (roundf(x) >= 0 && roundf(y) >= 0 && roundf(x) < matrix.size() && roundf(y) < matrix[roundf(x)].size()) 
+            if (roundf(x) >= 0 && roundf(y) >= 0 && roundf(x) < matrix.size() && roundf(y) < matrix[roundf(x)].size())
                 matrix[roundf(y)][roundf(x)] = char_;
             x += dx;
             y += dy;
